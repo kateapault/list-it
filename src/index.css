@@ -1,3 +1,27 @@
+/* :root {
+  --light: #F1FFFA;
+  --dark: #454545;
+  --primary: #785964;
+  --secondary: #93B7BE;
+  --accent: #D5C7BC;
+} */
+
+:root {
+  --light: #F1FFFA;
+  --dark: #454545;
+  --primary: #698195;
+  --secondary: #93B7BE;
+  --accent: #4C5760;
+
+  --pink-light: #EFF9F0;
+  --pink-dark: #13070C;
+  --pink-primary: #6B4D57;
+  --pink-secondary: #DDC8C4;
+  --pink-accent: #896A67;
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,7 +43,7 @@ code {
 }
 
 .header {
-  background-color: lightgray;
+  background-color: lightgrey;
   display:flex;
   flex-direction: column;
   height: 100%;
@@ -34,7 +58,7 @@ code {
   font-size: 30pt;
   text-align: center;
   justify-self: left;
-  color: grey;
+  color: var(--dark);
   padding-top:10px;
   padding-bottom:10px;
 }
@@ -49,7 +73,7 @@ code {
 
 .nav-button {
   height: 80px;
-  border: 4px solid grey;
+  border: 4px solid var(--dark);
   font-size: 16pt;
   display: flex;
   justify-content: center;
@@ -60,11 +84,14 @@ code {
 }
 
 .nav-button:hover {
-  background-color: grey;
-  color: white;
+  background-color: var(--primary);
+  border: 4px solid var(--primary);
+  border-radius: 20px;
+  color: var(--light);
 }
 
 .main {
+  background-color: var(--light);
   display: flex;
   height: 100%;
   flex-grow: 6;
@@ -76,19 +103,32 @@ code {
 .title {
   font-size: 50pt;
   padding-bottom: 10px;
+  color: var(--dark);
 }
 
 .dice {
   height: 400px;
   width: 400px;
-  background-color: blueviolet;
+  background-color: var(--secondary);
+  /* border: 10px solid var(--primary); */
+  border-radius: 100px;
+  box-shadow: 20px 20px 20px black;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.dice
+.dice-active {
+  height: 400px;
+  width: 400px;
+  background-color: var(--secondary);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 .hexagon-middle {
   height: 150px;
@@ -97,6 +137,7 @@ code {
   justify-content: center;
   align-items: center;
   font-size: 100pt;
+  color: var(--dark);
 }
 
 /* .hexagon-front {
