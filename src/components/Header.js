@@ -7,6 +7,7 @@ function Header(props) {
         <div className="header">
             <div className="site-title">List-It</div>
             {/* <NavBar changePage={props.changePage}/> */}
+            <div className="disclaimer"><div className="rotated">definitely not scattergories</div></div>
         </div>
     )
 };
