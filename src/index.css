@@ -11,3 +11,102 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.header {
+  background-color: lightgray;
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  width: 140px;
+  justify-content: flex-start;
+  
+}
+
+.site-title {
+  width: 100%;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 30pt;
+  text-align: center;
+  justify-self: left;
+  color: grey;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 6;
+  align-items: center;
+}
+
+.nav-button {
+  height: 80px;
+  border: 4px solid grey;
+  font-size: 16pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  flex-grow: 6;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title {
+  font-size: 50pt;
+  padding-bottom: 10px;
+}
+
+.dice {
+  height: 400px;
+  width: 400px;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice
+
+.hexagon-middle {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100pt;
+}
+
+/* .hexagon-front {
+  background-color: blue;
+  height: 150px;
+  width: 100px;
+} */
+
+/* .hexagon-back {
+  background-color: green;
+  height: 150px;
+  width: 100px;
+} */
