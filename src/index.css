@@ -20,8 +20,6 @@
   --pink-accent: #896A67;
 }
 
-
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -113,6 +111,28 @@ code {
   align-items: center;
 }
 
+.top-row {
+  display: flex;
+  width: 100%;
+}
+
+.bottom-row {
+  display: flex;
+  width: 100%;
+}
+
+.left-column {
+  display: flex;
+  width: 65%;
+  justify-content: center;
+}
+
+.right-column {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+}
+
 .title {
   font-size: 50pt;
   padding-bottom: 10px;
@@ -164,3 +184,87 @@ code {
   height: 150px;
   width: 100px;
 } */
+
+.options-bar {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 4px solid var(--secondary);
+  border-radius: 10px;
+  color: var(--dark);
+  padding: 10px;
+}
+
+.toggle {
+  /* width: 85%; */
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 4px solid var(--secondary); */
+  /* border-radius: 10px; */
+  /* color: var(--dark); */
+  /* padding: 10px; */
+}
+
+/* ////////////////// TOGGLE SWITCH /////////////////////////////////////// */
+/* Taken from W3 schools */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: lightgrey;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--light);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

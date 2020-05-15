@@ -1,16 +1,13 @@
 import React from 'react';
 
-import AlphabetDice from './AlphabetDice'
+import AlphabetDicePage from './AlphabetDicePage';
 
 class Main extends React.Component {
     render(){
         switch (this.props.page) {
             case 'roll-letter':
                 return(
-                    <div className="main">
-                        <div className="title">Click to roll</div>
-                        <AlphabetDice />
-                    </div>
+                    <AlphabetDicePage />
                 )
             case 'downloads':
                 return(
