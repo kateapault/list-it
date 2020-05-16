@@ -6,7 +6,8 @@ const AlphabetOptionsBar = props => {
     return(
         <div className="options-bar">
             <div>Options:</div>
-            <Toggle label="Weight by letter frequency"/>
+            <Toggle label="Exclude 'J', 'Q', 'X', 'Z'" id="one"/>
+            <Toggle label="Weight by letter frequency" id="two"/>
         </div>
     )
 };

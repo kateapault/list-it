@@ -4,9 +4,9 @@ const Toggle = props => {
     return(
         <div className="toggle">
             <div className="toggle-label">{props.label}</div>
-            <label className="switch">
-                <input type="checkbox"/>
-                <span className="slider round"></span>
+            <input type="checkbox" className="hide-me" id={props.id}/>
+            <label className="switch" for={props.id}>
+                <div className="slider"></div>
             </label>
         </div>
     )
